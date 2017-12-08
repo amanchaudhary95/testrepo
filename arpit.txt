@@ -1,9 +1,10 @@
+new line
 
 #!/usr/bin/env python
 
 import requests
 from bs4 import BeautifulSoup
-import Queue
+import Queue2
 import multiprocessing
 import MySQLdb
 
@@ -32,7 +33,11 @@ def work(q,proc_num):
  proc_counter=0;
  db = MySQLdb.connect("localhost","appuser","appuser123","apps")
  if(db):
+<<<<<<< HEAD
     print "connected to database2 :",proc_num
+=======
+    printf "connected to database :",proc_num
+>>>>>>> master
  cursor = db.cursor()  
  while True:
     temp=q.get()
