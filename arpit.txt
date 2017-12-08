@@ -33,7 +33,7 @@ def work(q,proc_num):
  proc_counter=0;
  db = MySQLdb.connect("localhost","appuser","appuser123","apps")
  if(db):
-    print "connected to database :",proc_num
+    printf "connected to database :",proc_num
  cursor = db.cursor()  
  while True:
     temp=q.get()
